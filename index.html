@@ -7,16 +7,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #F8F9FA; /* Light Gray */
+            background: linear-gradient(to right, #004D40, #00796B); /* Dark Teal to Deep Teal */
+            color: #fff;
         }
 
         header {
-            background-color: #004D40; /* Dark Teal */
+            background: rgba(0, 77, 64, 0.9); /* Semi-transparent dark teal */
             text-align: center;
             padding: 2rem 0;
             display: flex;
             align-items: center;
             justify-content: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
 
         .header-content {
@@ -48,10 +50,14 @@
         }
 
         nav {
-            background-color: #00796B; /* Deep Teal */
+            background: rgba(0, 121, 107, 0.9); /* Semi-transparent deep teal */
             color: #fff;
             text-align: center;
             padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
         }
 
         nav ul {
@@ -69,14 +75,21 @@
             text-decoration: none;
             color: #fff;
             font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #B2DFDB; /* Light mint green */
         }
 
         .section-content {
-            background-color: #FFFFFF;
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
             padding: 2rem;
-            margin: 1rem;
+            margin: 1rem auto;
+            width: 80%;
             border-radius: 15px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             text-align: justify;
         }
 
@@ -89,6 +102,7 @@
             display: inline-block;
             margin-top: 10px;
             font-weight: bold;
+            transition: background 0.3s ease;
         }
 
         .download-button:hover {
@@ -98,7 +112,7 @@
         footer {
             text-align: center;
             padding: 1rem 0;
-            background-color: #004D40; /* Dark Teal */
+            background: rgba(0, 77, 64, 0.9); /* Dark Teal */
             color: #fff;
         }
 
